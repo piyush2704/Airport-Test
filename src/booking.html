@@ -1,0 +1,64 @@
+<div class="container">
+    <header>
+        <div class='brand-icon'>
+            <img src="" alt="Flight Booking">
+        </div>
+    </header>
+    <div id = "mainContent" class="main-content">
+        <div id="search-box" class="mobile-search">
+            <form name="form1" id='form1'>
+                <div id="toggleTrip" class="travel-options">
+                    <div class="radio-group">
+                        <input type="radio" id='oneWay' name='travelOption' value="oneWay" checked><label for="oneWay">One Way</label>
+                        <input id='return' type='radio' name='travelOption' value="return"><label for="return">Return</label>
+                    </div>
+                </div>
+
+                <div class="pos-relative search-content">
+                    <div class="form-control">
+                        <label for = "from">From :</label>
+                        <select id="from">
+                        <option>From:</option>
+                    </select>
+                    </div>
+                    <span class="rotate"><img  id = "seach-icon"  class="rotate-image"> </span>
+                    <div class="form-control">
+                       <label for = "to">To :</label>
+                        <select id="to">
+                        <option>To:</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-control duration-class">
+                    <div class="align-center">
+                        <div id="dp1" class="date-picker col-lg-6">
+                            <label for = "from">Start Date</label>
+                            <input id='startDate' type="date" placeholder="Departure Date ">
+                        </div>
+                        <div id="dp2" class="date-picker col-lg-6">
+                            <label for = "from">End Date</label>
+                            <input id='endDate' type="date" placeholder="Return Date" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-control passenger-details">
+                    <input type="text" id = "passengerDetails" placeholder="Passenger Details">
+                </div>
+                <div class="pos-relative">
+                    <button class="search-button" id="searchFilghts" type="button"> <span>SEARCH</span></button>
+                </div>
+            </form>
+        </div>
+         <div id="flightResult" class="display-result">
+            <div id = "oneWayFlight"></div>
+            <div id = "returnFlight"></div>
+        </div>
+    </div>
+       
+        <footer>
+            site
+        </footer>
+    </div>
+</div>
+
+<div id = "modal"></div>
